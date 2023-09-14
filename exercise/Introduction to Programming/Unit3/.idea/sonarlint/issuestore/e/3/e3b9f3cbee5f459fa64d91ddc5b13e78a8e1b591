@@ -1,0 +1,7 @@
+
+[
+java:S1854"9Remove this useless assignment to local variable "third".(ÿâÅ’şÿÿÿÿ8’”¨õ¨1
+G	java:S106"+Replace this use of System.out by a logger.(£ÃÁÙ8“”¨õ¨1
+L
+java:S1481"*Remove this unused "third" local variable.(ÿâÅ’şÿÿÿÿ8””¨õ¨1
+L	java:S106	"+Replace this use of System.out by a logger.(ü…„ıÿÿÿÿ8…ó«õ¨1

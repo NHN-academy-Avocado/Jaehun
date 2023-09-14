@@ -9,9 +9,7 @@ public class Book {             //Exercise 03.1,6
         this.price = 0;
     }
     public static Book keyboardInput(){
-        String title = JOptionPane.showInputDialog("Insert a title");
-        String author = JOptionPane.showInputDialog("Insert a author");
-        return new Book(title, author);
+
     }
     public void printBook(){
         System.out.println("Title : " + this.title + "\nAuthors : " + this.authors);

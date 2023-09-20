@@ -1,0 +1,64 @@
+public class Apartment {
+    private int size;
+    private String address;
+    private String[] numbersOfPersons;
+
+    public Apartment(int size, String address) {
+        this.size = size;
+        this.address = address;
+        this.numbersOfPersons = new String[10];
+    }
+
+    public int getSize() {
+        return this.size;
+    }
+
+    public String getAddress() {
+        return this.address;
+    }
+
+    public int getNumbersOfPersons() {
+        int n = 0;
+        for (int i = 0; i < numbersOfPersons.length; i++) {
+            if (numbersOfPersons[i] != null) {
+                n++;
+            }
+        }
+        return n;
+    }
+
+    public void addPerson(String name) {
+        int now = getNumbersOfPersons();
+        if (now != 10) {
+            this.numbersOfPersons[now] = name;
+        }
+    }
+
+    public String getPerson(int n) {
+        if (n >= getNumbersOfPersons()) {
+            return null;
+        } else {
+            return this.numbersOfPersons[n];
+        }
+    }
+
+    public void removePerson(int n) {
+        int now = getNumbersOfPersons();
+        if (n < now) {
+            for (int i = n; i < now - 1; i++) {
+                numbersOfPersons[i] = numbersOfPersons[i + 1];
+            }
+            numbersOfPersons[now - 1] = "";
+
+        }
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("size : " + this.size + "\naddress : " + address + "\naddress : ");
+        for (int i = 0; i < numbersOfPersons.length; i++) {
+            sb.append(numbersOfPersons[i] + " ");
+        }
+        return sb.toString();
+    }
+}

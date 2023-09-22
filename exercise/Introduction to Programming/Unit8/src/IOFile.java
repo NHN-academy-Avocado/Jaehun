@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.PrintStream;
 import java.io.PrintWriter;
 
 public class IOFile {
@@ -15,7 +16,7 @@ public class IOFile {
 
     public int countLines() throws IOException {
         int result = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));) {
+        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName))) {
             while (br.readLine() != null) {
                 result++;
             }
@@ -24,17 +25,29 @@ public class IOFile {
     }
 
     public void write(OutputStream os) throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));
-             PrintWriter pw = new PrintWriter(os);) {
-            String s;
-            while ((s = br.readLine()) != null) {
-                pw.println(s);
-            }
+
+//        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));
+//             PrintWriter pw = new PrintWriter(os)) {
+//            String s;
+//            while ((s = br.readLine()) != null) {
+//                pw.println(s);
+//            }
+//
+//        }
+        BufferedReader br = new BufferedReader(new FileReader(this.fileName));
+        PrintWriter pw = new PrintWriter(os);
+        String s;
+        while((s=br.readLine())!=null){
+            pw.println(s);
         }
+        pw.flush();
+        pw.close();
+        br.close();
+        System.out.println("탈출");
     }
 
     public void print() throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));) {
+        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName))) {
             String s;
             while ((s = br.readLine()) != null) {
                 System.out.println(s);
@@ -43,10 +56,10 @@ public class IOFile {
     }
 
     public void copy(String filename) throws IOException {
-        try (BufferedReader input = new BufferedReader(new FileReader(this.fileName));
+        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));
              PrintWriter pw = new PrintWriter(new FileWriter(filename));) {
             String s;
-            while ((s = input.readLine()) != null) {
+            while ((s = br.readLine()) != null) {
                 pw.println(s);
             }
         }

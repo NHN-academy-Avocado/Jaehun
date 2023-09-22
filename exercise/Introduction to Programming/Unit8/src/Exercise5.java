@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.StringTokenizer;
 
 public class Exercise5 {
     public static void main(String[] args) throws IOException {

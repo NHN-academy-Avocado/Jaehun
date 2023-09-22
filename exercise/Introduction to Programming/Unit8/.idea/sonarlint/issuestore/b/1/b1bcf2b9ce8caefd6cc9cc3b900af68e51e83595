@@ -1,0 +1,7 @@
+
+i
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(ø™×8‰²ÅÑ«1
+L	java:S106("+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8Š²ÅÑ«1
+p
+java:S40429"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(£ß‚ùıÿÿÿÿ8Œ²ÅÑ«1
+L	java:S106:"+Replace this use of System.out by a logger.(ÓèÒúÿÿÿÿ8Œ²ÅÑ«1

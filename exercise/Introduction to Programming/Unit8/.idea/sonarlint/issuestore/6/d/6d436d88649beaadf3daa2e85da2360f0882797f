@@ -1,0 +1,13 @@
+
+n
+java:S2095."LUse try-with-resources or close this "BufferedReader" in a "finally" clause.( ±…ôûÿÿÿÿ8çúâÀ«1
+G	java:S106>"+Replace this use of System.out by a logger.(ƒö¡¯8êúâÀ«1
+L	java:S106?"+Replace this use of System.out by a logger.(¹ŞĞ³ÿÿÿÿÿ8êúâÀ«1
+G	java:S106@"+Replace this use of System.out by a logger.(óíß‰8êúâÀ«1
+L	java:S106A"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ëúâÀ«1
+G	java:S106H"+Replace this use of System.out by a logger.(ƒö¡¯8ëúâÀ«1
+L	java:S106I"+Replace this use of System.out by a logger.(¹ŞĞ³ÿÿÿÿÿ8ëúâÀ«1
+G	java:S106J"+Replace this use of System.out by a logger.(óíß‰8ëúâÀ«1
+L	java:S106L"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ëúâÀ«1
+N
+java:S1068'",Remove this unused "filename" private field.( ’ÿÿÿÿÿÿ8ëúâÀ«1

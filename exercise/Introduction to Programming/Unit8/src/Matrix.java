@@ -10,29 +10,29 @@ public class Matrix {
         this.arr = new int[n][m];
     }
     public void save(String filename) throws IOException{
-        PrintWriter out = new PrintWriter(new FileWriter("src/filename"));
-        out.println(this.n);
-        out.println(this.m);
-        for(int i=0; i<this.n; i++){
-            for(int j=0; j<this.m; j++){
-                out.println(arr[i][j]);
-            }
-        }
-        out.close();
-    }
-    public static Matrix read(String filename)throws IOException{
-        BufferedReader br = new BufferedReader(new FileReader(filename));
-        Matrix tmp=null;
-        int n=0;
-        while((n=Integer.parseInt(br.readLine()))!=0){
-            tmp = new Matrix(n, Integer.parseInt(br.readLine()));
-            for(int i=0; i<tmp.n; i++){
-                for(int j=0; j<tmp.m; j++){
-                    tmp.arr[i][j]= Integer.parseInt(br.readLine());
+        try(PrintWriter out = new PrintWriter(new FileWriter(filename));) {
+            out.println(this.n);
+            out.println(this.m);
+            for (int i = 0; i < this.n; i++) {
+                for (int j = 0; j < this.m; j++) {
+                    out.println(arr[i][j]);
                 }
             }
         }
-        br.close();
+    }
+    public static Matrix read(String filename)throws IOException{
+        Matrix tmp = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(filename));){
+            int n = 0;
+            while ((n = Integer.parseInt(br.readLine())) != 0) {
+                tmp = new Matrix(n, Integer.parseInt(br.readLine()));
+                for (int i = 0; i < tmp.n; i++) {
+                    for (int j = 0; j < tmp.m; j++) {
+                        tmp.arr[i][j] = Integer.parseInt(br.readLine());
+                    }
+                }
+            }
+        }
         return tmp;
     }
     public Matrix sum(Matrix m){
@@ -48,6 +48,7 @@ public class Matrix {
             return null;
         }
     }
+
     public Matrix product(Matrix m){
         Matrix tmp;
         if(this.m==m.n){

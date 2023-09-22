@@ -7,13 +7,13 @@ public class Exercise4 {
     }
     public static void mul() throws IOException{
         int n = Integer.parseInt(JOptionPane.showInputDialog("Enter integer"));
-        PrintWriter out = new PrintWriter(new FileWriter("src/ex4.txt"));
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n; j++){
-                out.print(i*j + " ");
+        try(PrintWriter out = new PrintWriter(new FileWriter("src/ex4.txt"));) {
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= n; j++) {
+                    out.print(i * j + " ");
+                }
+                out.println();
             }
-            out.println();
         }
-        out.close();
     }
 }

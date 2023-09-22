@@ -1,6 +1,9 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Exercise8 {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         Apartment ap = new Apartment(10, "chosun");
         System.out.println(ap.getSize());
         System.out.println(ap.getAddress());
@@ -23,7 +26,8 @@ public class Exercise8 {
 
 
         ap.saveToFile("src/ex8");
-        BufferedReader br = new BufferedReader(new FileReader("src/ex8"));
-        ap.readFromFile(br);
+        try (BufferedReader br = new BufferedReader(new FileReader("src/ex8"));) {
+            ap.readFromFile(br);
+        }
     }
 }

@@ -58,21 +58,22 @@ public class Apartment {
         }
     }
     public void saveToFile(String filename)throws IOException {
-        PrintWriter out = new PrintWriter(new FileWriter(filename));
-        out.print(this.size);
-        out.print(this.address);
-        for(int i=0; i<getNumbersOfPersons();i++){
-            out.print(numbersOfPersons[i] +" ");
+        try(PrintWriter out = new PrintWriter(new FileWriter(filename));) {
+            out.print(this.size);
+            out.print(this.address);
+            for (int i = 0; i < getNumbersOfPersons(); i++) {
+                out.print(numbersOfPersons[i] + " ");
+            }
         }
-        out.println();
     }
     public static void readFromFile(BufferedReader br)throws IOException{
-        PrintWriter out = new PrintWriter(System.out);
-        int n=0;
-        while((n = Integer.parseInt(br.readLine()))!=0){
-            out.println(n);
-            out.println(br.readLine());
-            out.println(br.readLine());
+        try(PrintWriter out = new PrintWriter(System.out);) {
+            int n = 0;
+            while ((n = Integer.parseInt(br.readLine())) != 0) {
+                out.println(n);
+                out.println(br.readLine());
+                out.println(br.readLine());
+            }
         }
     }
     @Override

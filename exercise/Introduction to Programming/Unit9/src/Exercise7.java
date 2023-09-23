@@ -1,15 +1,18 @@
 import java.io.*;
 
 public class Exercise7 {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws IOException{
         System.out.println(fileExists("te.txt") + ", " + isInt("10") + ", " + isDouble("10"));
     }
-    public static boolean fileExists(String filename){
-        try{
-            FileReader fr = new FileReader(filename);
+    public static boolean fileExists(String filename) throws IOException {
+        FileReader fr=null;
+        try {
+            fr = new FileReader(filename);
             return true;
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             return false;
+        }finally {
+            fr.close();
         }
     }
     public static boolean isInt(String s){

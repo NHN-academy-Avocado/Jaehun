@@ -1,0 +1,7 @@
+
+W
+java:S1141""5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¿Ç ÿ«1
+L	java:S106"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿ8ÍÇ ÿ«1
+L	java:S106+"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿ8ÏÇ ÿ«1
+o
+java:S3776?"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(È¹Ýó8ÐÇ ÿ«1

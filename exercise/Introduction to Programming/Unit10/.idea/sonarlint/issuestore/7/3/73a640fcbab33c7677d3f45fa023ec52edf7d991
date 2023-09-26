@@ -1,0 +1,13 @@
+
+g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8Ñíàç¬1
+g	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8Ñíàç¬1
+9
+java:S1643("Use a StringBuilder instead.(›ññ8Ñíàç¬1
+9
+java:S1643*"Use a StringBuilder instead.(³•Ô8Ñíàç¬1
+5
+java:S1700"Rename field "moor"(Êæ²”øÿÿÿÿ8Òíàç¬1
+5
+java:S17002"Rename field "traversal"(Â÷éÊ8Òíàç¬1
+G	java:S106"+Replace this use of System.out by a logger.(ı®µ8»äç¬1
+^	java:S125€"<This block of commented-out lines of code should be removed.(…Ó¼øÿÿÿÿ8èíàç¬1

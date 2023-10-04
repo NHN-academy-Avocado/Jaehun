@@ -1,5 +1,6 @@
 package com.nhnacademy.tribe;
 import com.nhnacademy.Unit;
+import java.io.File;
 import java.util.*;
 public class Zerg extends Tribe{
 
@@ -7,12 +8,14 @@ public class Zerg extends Tribe{
     public void addUnit(){
         unitCount = 8;
         List<String> zergNameList = new ArrayList<>();
-        zergNameList.add("Zergling");
-        zergNameList.add("Hydralisk");
-        zergNameList.add("Ultralisk");
-        zergNameList.add("Mutalisk");
-        zergNameList.add("Guardian");
-        zergNameList.add("Queen");
+        File packageDir = new File("src/main/java/com/nhnacademy/zerg");
+        String[] classFiles = packageDir.list();
+        if (classFiles != null) {
+            for (String classFile : classFiles) {
+                String className = classFile.substring(0, classFile.lastIndexOf('.'));
+                zergNameList.add(className);
+            }
+        }
 
         for (int i = 0; i < unitCount; i++) {
             Collections.shuffle(zergNameList);

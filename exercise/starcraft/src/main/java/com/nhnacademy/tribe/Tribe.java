@@ -6,7 +6,6 @@ import java.util.List;
 
 public abstract class Tribe {
 
-
     public int getUnitCount() {
         return unitCount;
     }

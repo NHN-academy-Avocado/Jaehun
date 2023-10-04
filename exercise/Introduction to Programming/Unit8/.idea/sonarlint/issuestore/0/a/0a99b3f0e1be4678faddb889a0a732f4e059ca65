@@ -1,8 +1,9 @@
 
 ]
-java:S3518";Make sure "count" can't be zero before doing this division.(™‹—Ûûÿÿÿÿ8¸£«Ñ«1
-L	java:S106"+Replace this use of System.out by a logger.(Õâ½Ìÿÿÿÿÿ8Šµ¶«1
+java:S3518";Make sure "count" can't be zero before doing this division.(™‹—Ûûÿÿÿÿ8˜™„ß«1
+a
+java:S2583"DChange this condition so that it does not always evaluate to "false"(ìÛÀ8˜™„ß«1
+L	java:S106"+Replace this use of System.out by a logger.(Õâ½Ìÿÿÿÿÿ8š™„ß«1
+J	java:S108")Either remove or fill this block of code.(¥¨›ıÿÿÿÿ8š™„ß«1
 =
-java:S1659"!Declare "sum" on a separate line.(®†Ô88É³øµ«1
-X
-java:S1128"6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ8¼£«Ñ«1
+java:S1659"!Declare "sum" on a separate line.(®†Ô88œ™„ß«1

@@ -5,8 +5,6 @@
 src/ex3.txt,3/0/30b76b56ee6cfaad233c9db7acf248f0487df670
 ;
 src/ex4.txt,b/a/ba4ce476ea33bf8112a87402dbcf83a183a35d8d
-;
-src/ex6.txt,9/1/918ce30f91ea9c70f8990ed54a0eebf747e7281d
 B
 src/HandleBAs.java,6/d/6d436d88649beaadf3daa2e85da2360f0882797f
 ;
@@ -35,3 +33,12 @@ B
 src/Apartment.java,d/a/dada1d4443d687d075735d14eaec43ac90c5ea0e
 B
 src/Exercise3.java,2/3/23b939496a5ca55a05deff370d1cccd1592a292c
+;
+src/ext.txt,a/2/a2be7e16cfd6a6bc3cfe8c1ee3e5ef913ef84c0b
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+<
+src/test.txt,8/6/8697c115c491c5f18f6d658f44b3ee38ebc27cf1
+=
+src/Temp.java,5/7/57e75ae3805c3d99a3bd25e70c3e0bd25e7ab819

@@ -26,23 +26,14 @@ public class IOFile {
 
     public void write(OutputStream os) throws IOException {
 
-//        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));
-//             PrintWriter pw = new PrintWriter(os)) {
-//            String s;
-//            while ((s = br.readLine()) != null) {
-//                pw.println(s);
-//            }
-//
-//        }
-        BufferedReader br = new BufferedReader(new FileReader(this.fileName));
-        PrintWriter pw = new PrintWriter(os);
-        String s;
-        while((s=br.readLine())!=null){
-            pw.println(s);
+        try (BufferedReader br = new BufferedReader(new FileReader(this.fileName));
+             PrintWriter pw = new PrintWriter(os)) {
+            String s;
+            while ((s = br.readLine()) != null) {
+                pw.println(s);
+            }
+            pw.flush();
         }
-        pw.flush();
-        pw.close();
-        br.close();
         System.out.println("탈출");
     }
 

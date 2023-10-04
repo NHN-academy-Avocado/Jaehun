@@ -3,10 +3,18 @@ import java.io.*;
 public class Exercise5 {
     public static void main(String[] args) throws IOException {
         System.out.println(highAver());
+        try{
+            highAver();
+        }catch(IllegalArgumentException e){
+
+        }
     }
     public static String highAver() throws IOException{
         String result = "";
         try(BufferedReader br = new BufferedReader(new FileReader("src/ex5.txt"));) {
+            if(br==null){
+                throw new IllegalArgumentException("dddd");
+            }
             String s;
             int max = -1;
             while ((s = br.readLine()) != null) {

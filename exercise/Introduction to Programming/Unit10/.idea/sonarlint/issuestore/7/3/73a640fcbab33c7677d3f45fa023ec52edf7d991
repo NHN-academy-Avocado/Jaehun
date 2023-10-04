@@ -1,13 +1,25 @@
 
-g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8Ñíàç¬1
-g	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8Ñíàç¬1
+g	java:S112Q"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8÷·²ú¬1
+g	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.(åãóÿÿÿÿÿ8÷·²ú¬1
 9
-java:S1643("Use a StringBuilder instead.(›ññ8Ñíàç¬1
+java:S1643*"Use a StringBuilder instead.(›ññ8ø·²ú¬1
 9
-java:S1643*"Use a StringBuilder instead.(³•Ô8Ñíàç¬1
+java:S1643,"Use a StringBuilder instead.(³•Ô8ø·²ú¬1
 5
-java:S1700"Rename field "moor"(Êæ²”øÿÿÿÿ8Òíàç¬1
+java:S1700"Rename field "moor"(Êæ²”øÿÿÿÿ8ù·²ú¬1
 5
-java:S17002"Rename field "traversal"(Â÷éÊ8Òíàç¬1
-G	java:S106"+Replace this use of System.out by a logger.(ı®µ8»äç¬1
-^	java:S125€"<This block of commented-out lines of code should be removed.(…Ó¼øÿÿÿÿ8èíàç¬1
+java:S17004"Rename field "traversal"(Â÷éÊ8ù·²ú¬1
+G	java:S106"+Replace this use of System.out by a logger.(ı®µ8¸²ú¬1
+X	java:S125@"<This block of commented-out lines of code should be removed.(É¬Ù±8‘¸²ú¬1
+]	java:S125]"<This block of commented-out lines of code should be removed.(òß¿•üÿÿÿÿ8…Œ½ú¬1
+G	java:S106v"+Replace this use of System.out by a logger.(–àÇÚ8â‡¼ú¬1
+]	java:S125w"<This block of commented-out lines of code should be removed.(Â‚°ıÿÿÿÿ8ã‡¼ú¬1
+Y	java:S125ˆ"<This block of commented-out lines of code should be removed.(¡Õ±š8ã‡¼ú¬1
+p
+java:S3776È"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(‰ò™ˆ8Ù³ú¬1
+H
+java:S10688"+Remove this unused "visited" private field.(ï¼¯¶8•¸²ú¬1
+O
+java:S1144"1Remove this unused private "traverseMoor" method.(¬«Ì8•¸²ú¬1
+P
+java:S1144™"2Remove this unused private "traverseMoor2" method.(Ã€üá8•¸²ú¬1

@@ -10,17 +10,22 @@ public class BOJ1018 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        String[][] arr = new String[N][M];
+
+        char[][] arr = new char[N][M];
+
         for (int i = 0; i < N; i++) {
+            String line = br.readLine();
             for (int j = 0; j < M; j++) {
-                arr[i][j] = String.valueOf((char) br.read());
+                arr[i][j] = line.charAt(j);
             }
-            br.readLine();
         }
+
         int min = Integer.MAX_VALUE;
+
         for (int i = 0; i <= N - 8; i++) {
             for (int j = 0; j <= M - 8; j++) {
                 int result = reDrawCount(arr, i, j);
+
                 if (result < min) {
                     min = result;
                 }
@@ -30,27 +35,29 @@ public class BOJ1018 {
 
     }
 
-    public static int reDrawCount(String[][] arr, int w, int h) {
-        int min = Integer.MAX_VALUE, count = 0;
-        String[] firstW = {"W", "B", "W", "B", "W", "B", "W", "B"};
-        String[] firstB = {"B", "W", "B", "W", "B", "W", "B", "W"};
+    public static int reDrawCount(char[][] arr, int w, int h) {
+        int min = Integer.MAX_VALUE, count;
+        char[] firstW = {'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B'};
+        char[] firstB = {'B', 'W', 'B', 'W', 'B','W', 'B', 'W'};
 
-        String[] checkArr = new String[8];
-        checkArr = firstW;
+        char[] checkArr = firstW;
         for (int check = 0; check < 2; check++) {
+            count=0;
             for (int i = w; i < w + 8; i++) {
                 int index = 0;
                 for (int j = h; j < h + 8; j++) {
-                    if (!arr[i][j].equals(checkArr[index++])) {
+                    if (arr[i][j]!= checkArr[index++]) {
                         count++;
                     }
 
                 }
                 checkArr = Arrays.equals(checkArr, firstW) ? firstB : firstW;
             }
-            if (check == 0) {
+
+            if (min > count) {
                 min = count;
             }
+
             checkArr = firstB;
         }
         return min;

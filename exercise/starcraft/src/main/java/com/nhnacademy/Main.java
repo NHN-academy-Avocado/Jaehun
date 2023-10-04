@@ -40,7 +40,7 @@ public class Main {
     }
 
     private static void run(Tribe user, Tribe computer, Scanner scanner) {
-        System.out.println("Game Start");
+        System.out.println("Game Start\n");
         boolean turnCheck = true;
         int attack = 0, defense = 0;
         while (true) {
@@ -53,16 +53,17 @@ public class Main {
                 defense = scanner.nextInt();
                 attackUnit(user, attack, defense);
             } else {          // computer 턴
-                attack = random.nextInt(computer.getLeftUnit());
-                defense = random.nextInt(user.getLeftUnit());
+                attack = random.nextInt(computer.getUnitCount());
+                defense = random.nextInt(user.getUnitCount());
                 attackUnit(computer, attack, defense);
             }
 
             turnCheck = !turnCheck;
-            if (user.getLeftUnit() == 0) {
+
+            if (user.getUnitCount() == 0) {
                 System.out.println("User Lose");
                 break;
-            } else if (computer.getLeftUnit() == 0) {
+            } else if (computer.getUnitCount() == 0) {
                 System.out.println("User Win");
                 break;
             }
@@ -73,9 +74,7 @@ public class Main {
         if (attacker.equals(usr)) {
             System.out.println("아군 유닛 " + attack + ". " + usr.getUnit(attack) +
                     "이 적군 유닛 " + defense + ". " + com.getUnit(defense) + "를 공격합니다");
-            usr.getUnit(attack).attack(com.getUnit(defense));
-
-            if (com.getUnit(defense).getDefense() <= 0) {
+            if(usr.getUnit(attack).attack(com.getUnit(defense)) &&com.getUnit(defense).getDefense() <= 0 ){
                 com.deleteUnit(defense);
                 System.out.println("적군 유닛이 제거되었습니다.");
             }
@@ -83,9 +82,7 @@ public class Main {
         } else if (attacker.equals(com)) {
             System.out.println("적군 유닛 " + attack + ". " + com.getUnit(attack) +
                     "이 아군 유닛 " + defense + ". " + usr.getUnit(defense) + "를 공격합니다");
-            com.getUnit(attack).attack(usr.getUnit(defense));
-
-            if (usr.getUnit(defense).getDefense() <= 0) {
+            if(com.getUnit(attack).attack(usr.getUnit(defense)) && usr.getUnit(defense).getDefense() <= 0){
                 usr.deleteUnit(defense);
                 System.out.println("아군 유닛이 제거되었습니다.");
             }
@@ -94,9 +91,12 @@ public class Main {
 
 
     private static void printTwoTribe(Tribe user, Tribe computer) {
+        System.out.println("----------------------------------------");
         System.out.println("아군: " + user.getClass().getSimpleName());
         user.printTribe();
-        System.out.println("적군: " + computer.getClass().getSimpleName());
+        System.out.println("\n적군: " + computer.getClass().getSimpleName());
         computer.printTribe();
+        System.out.println("----------------------------------------");
+
     }
 }

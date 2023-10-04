@@ -3,8 +3,11 @@ import com.nhnacademy.Unit;
 import java.util.*;
 
 public class Terran extends Tribe {
+
+
     @Override
     public void addUnit(){
+        unitCount = 5;
         List<String> terranNameList = new ArrayList<>();
         terranNameList.add("Marine");
         terranNameList.add("Tank");
@@ -13,7 +16,7 @@ public class Terran extends Tribe {
         terranNameList.add("Valkyrie");
         terranNameList.add("BattleCruzer");
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < unitCount; i++) {
             Collections.shuffle(terranNameList);
             String className = "com.nhnacademy.terran." + terranNameList.get(0);
             try {

@@ -5,23 +5,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Tribe {
+
+
+    public int getUnitCount() {
+        return unitCount;
+    }
+
+    protected int unitCount;
     public List<Unit> unitList = new ArrayList<>();
-    public Tribe(){
+
+    public Tribe() {
         addUnit();
     }
+
     public abstract void addUnit();
-    public void printTribe(){
-        for(int i=0; i<unitList.size(); i++){
-            System.out.println(i + ". " + unitList.get(i));
+
+    public void printTribe() {
+        for (int i = 0; i < unitList.size(); i++) {
+            if (unitList.get(i).getDefense() > 0) {
+                System.out.println(i + ". " + unitList.get(i));
+            }
         }
-        System.out.println();
     }
-    public void deleteUnit(int index){
-        unitList.remove(index);
+
+    public void deleteUnit(int index) {
+        unitCount--;
     }
-    public int getLeftUnit(){
-        return this.unitList.size();
-    }
+
+
     public Unit getUnit(int index) {
         return unitList.get(index);
     }

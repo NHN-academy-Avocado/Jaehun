@@ -2,8 +2,10 @@ package com.nhnacademy.tribe;
 import com.nhnacademy.Unit;
 import java.util.*;
 public class Zerg extends Tribe{
+
     @Override
     public void addUnit(){
+        unitCount = 8;
         List<String> zergNameList = new ArrayList<>();
         zergNameList.add("Zergling");
         zergNameList.add("Hydralisk");
@@ -12,7 +14,7 @@ public class Zerg extends Tribe{
         zergNameList.add("Guardian");
         zergNameList.add("Queen");
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < unitCount; i++) {
             Collections.shuffle(zergNameList);
             String className = "com.nhnacademy.zerg." + zergNameList.get(0);
             try {

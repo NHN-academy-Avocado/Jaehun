@@ -28,7 +28,7 @@ public class Unit implements Flyable {
     }
 
     public boolean attack(Unit unit) {
-        if(unit.getDefense()>0) {
+        if (unit.getDefense() > 0 && this.getDefense() > 0) {
             if (this.fly() || this.flyAttack() ||
                     (!this.fly() && !unit.fly())) {   // fly:나는객체, flyAttack: 나는걸 공격 가능한 객체
                 unit.defense(this);                             // 혹은 날수없는 객체가 날수없는 객체를 공격
@@ -36,7 +36,9 @@ public class Unit implements Flyable {
             } else {
                 System.out.println(this.getName() + "는 " + unit.getName() + "을 공격 불가능한 조건 입니다");
             }
-        }else{
+        } else if (this.getDefense() <= 0) {
+            System.out.println("죽은 유닛으로은 공격할 수 없습니다");
+        } else {
             System.out.println("방어력이 0보다 작은 유닛은 공격 불가능합니다.");
         }
         return false;

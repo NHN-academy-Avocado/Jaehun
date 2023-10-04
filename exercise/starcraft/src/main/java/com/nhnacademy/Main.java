@@ -72,17 +72,18 @@ public class Main {
 
     private static void attackUnit(Tribe attacker, int attack, int defense) {
         if (attacker.equals(usr)) {
-            System.out.println("아군 유닛 " + attack + ". " + usr.getUnit(attack) +
+            System.out.println("\n아군 유닛 " + attack + ". " + usr.getUnit(attack) +
                     "이 적군 유닛 " + defense + ". " + com.getUnit(defense) + "를 공격합니다");
-            if(usr.getUnit(attack).attack(com.getUnit(defense)) &&com.getUnit(defense).getDefense() <= 0 ){
+            if (usr.getUnit(attack).attack(com.getUnit(defense)) && com.getUnit(defense).getDefense() <= 0) {
                 com.deleteUnit(defense);
                 System.out.println("적군 유닛이 제거되었습니다.");
             }
 
         } else if (attacker.equals(com)) {
-            System.out.println("적군 유닛 " + attack + ". " + com.getUnit(attack) +
+
+            System.out.println("\n적군 유닛 " + attack + ". " + com.getUnit(attack) +
                     "이 아군 유닛 " + defense + ". " + usr.getUnit(defense) + "를 공격합니다");
-            if(com.getUnit(attack).attack(usr.getUnit(defense)) && usr.getUnit(defense).getDefense() <= 0){
+            if (com.getUnit(attack).attack(usr.getUnit(defense)) && usr.getUnit(defense).getDefense() <= 0) {
                 usr.deleteUnit(defense);
                 System.out.println("아군 유닛이 제거되었습니다.");
             }

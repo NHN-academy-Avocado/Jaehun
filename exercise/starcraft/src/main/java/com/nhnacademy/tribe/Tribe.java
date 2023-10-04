@@ -11,9 +11,10 @@ public abstract class Tribe {
     }
 
     protected int unitCount;
-    public List<Unit> unitList = new ArrayList<>();
+    public List<Unit> unitList;
 
     public Tribe() {
+        unitList = new ArrayList<>();
         addUnit();
     }
 

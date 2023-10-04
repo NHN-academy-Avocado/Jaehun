@@ -1,0 +1,8 @@
+
+v
+java:S1104"TMake unitList a static final constant or non-public and provide accessors if needed.(’£§Œıÿÿÿÿ8¿´ôÀ¯1
+[
+java:S5993"9Change the visibility of this constructor to "protected".(ã»ŞØÿÿÿÿÿ8Ä´ôÀ¯1
+G	java:S106"+Replace this use of System.out by a logger.(Ìƒª¿8Æ´ôÀ¯1
+N
+java:S1172",Remove this unused method parameter "index".(ŠÏ¾ıÿÿÿÿ8¾ŒœÁ¯1

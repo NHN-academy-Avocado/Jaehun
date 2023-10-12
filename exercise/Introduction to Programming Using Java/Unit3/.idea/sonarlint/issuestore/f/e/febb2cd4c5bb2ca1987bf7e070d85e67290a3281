@@ -1,0 +1,7 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£ìñ‰úÿÿÿÿ8‘¦³‰²1
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(È¦­³ýÿÿÿÿ8¯¤´‰²1
+F
+java:S2140")Use "java.util.Random.nextInt()" instead.(ƒç‘â8±¤´‰²1
+L	java:S106"+Replace this use of System.out by a logger.(Ž³ð¸ûÿÿÿÿ8òˆ¸‰²1

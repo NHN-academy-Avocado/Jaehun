@@ -1,0 +1,72 @@
+
+y
+java:S1192"VDefine a constant instead of duplicating this literal "Integer in the range " 3 times.(æşóÇüÿÿÿÿ8¶úİë±1
+}
+java:S1192Ó"ZDefine a constant instead of duplicating this literal "Real number in the range " 6 times.(–‡•Æıÿÿÿÿ8¶úİë±1
+g
+java:S1192„"IDefine a constant instead of duplicating this literal "(Error :" 4 times.(–‚Óµ8·úİë±1
+z
+java:S1192ò"\Define a constant instead of duplicating this literal "Error while writing output." 6 times.(İ¢Áæ8·úİë±1
+v
+java:S1192ƒ"SDefine a constant instead of duplicating this literal "Can't open file \"" 4 times.(÷†ÿÿÿÿÿÿ8·úİë±1
+{	java:S135­"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8·úİë±1
+{	java:S135Ï"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8·úİë±1
+{	java:S135ò"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8·úİë±1
+{	java:S135ª"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8¸úİë±1
+{	java:S135ı"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8¸úİë±1
+
+java:S4165µ"aRemove this useless assignment; "ans" already holds the assigned value along all execution paths.(ø—ú8Öüİë±1
+k
+java:S1845Ç"MRename method "eoln" to prevent any misunderstanding/clash with field "EOLN".(òÁ»8×üİë±1
+i
+java:S1845Ğ"KRename method "eof" to prevent any misunderstanding/clash with field "EOF".(¾şãÙ8×üİë±1
+}
+java:S1149‹"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÒóÓ8Üüİë±1
+‚
+java:S1149–"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ë§ñ„øÿÿÿÿ8Üüİë±1
+\
+java:S1118#":Add a private constructor to hide the implicit public one.(Äş¢†ıÿÿÿÿ8Üüİë±1
+g
+java:S11242"EReorder the modifiers to comply with the Java Language Specification.(ıÀõœÿÿÿÿÿ8ßüİë±1
+g
+java:S11248"EReorder the modifiers to comply with the Java Language Specification.(Ö·âÒúÿÿÿÿ8àüİë±1
+J	java:S108F")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8ãüİë±1
+K	java:S108Š")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8îüİë±1
+K	java:S108¸")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8òüİë±1
+K	java:S108Î")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8óüİë±1
+K	java:S108“")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8õüİë±1
+K	java:S108Ê")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8øüİë±1
+d
+java:S3457„"AFormat specifiers should be used instead of string concatenation.(Õôíèûÿÿÿÿ8ûüİë±1
+h
+java:S1124Ç"EReorder the modifiers to comply with the Java Language Specification.(Ú•Ïëÿÿÿÿÿ8“ıİë±1
+h
+java:S1124È"EReorder the modifiers to comply with the Java Language Specification.(¦¦›øüÿÿÿÿ8”ıİë±1
+M	java:S106È"+Replace this use of System.out by a logger.(¦¦›øüÿÿÿÿ8”ıİë±1
+c
+java:S1124Õ"EReorder the modifiers to comply with the Java Language Specification.(÷±ÛÜ8”ıİë±1
+N
+java:S6035Õ"0Replace this alternation with a character class.(÷±ÛÜ8£ıİë±1
+Z
+java:S6353Õ"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷±ÛÜ8¥ıİë±1
+c
+java:S1124Ö"EReorder the modifiers to comply with the Java Language Specification.(Õ–Ò§8¦ıİë±1
+N
+java:S6035Ö"0Replace this alternation with a character class.(Õ–Ò§8§ıİë±1
+N
+java:S6035Ö"0Replace this alternation with a character class.(Õ–Ò§8§ıİë±1
+N
+java:S6035Ö"0Replace this alternation with a character class.(Õ–Ò§8§ıİë±1
+Z
+java:S6353Ö"<Use concise character class syntax '\\d' instead of '[0-9]'.(Õ–Ò§8§ıİë±1
+Z
+java:S6353Ö"<Use concise character class syntax '\\d' instead of '[0-9]'.(Õ–Ò§8§ıİë±1
+Z
+java:S6353Ö"<Use concise character class syntax '\\d' instead of '[0-9]'.(Õ–Ò§8§ıİë±1
+Z
+java:S6353Ö"<Use concise character class syntax '\\d' instead of '[0-9]'.(Õ–Ò§8§ıİë±1
+g
+java:S1858„"D"s" is already a string, there's no need to call "toString()" on it.(«ô¸Úúÿÿÿÿ8¬ıİë±1
+M	java:S106å"+Replace this use of System.err by a logger.(“‚®Åøÿÿÿÿ8±ıİë±1
+r
+java:S5843Ö"TSimplify this regular expression to reduce its complexity from 27 to the 20 allowed.(Õ–Ò§8³ıİë±1

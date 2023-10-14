@@ -1,0 +1,10 @@
+
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(©ññs8ıµÈõ²1
+L	java:S106"+Replace this use of System.out by a logger.(Âî±øşÿÿÿÿ8¶Èõ²1
+G	java:S106"+Replace this use of System.out by a logger.(Œ€ÿ8¶Èõ²1
+n
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Ñ‚×8‚¶Èõ²1
+G	java:S106"+Replace this use of System.out by a logger.(Ñ‚×8‚¶Èõ²1
+Y
+java:S1854
+"7Remove this useless assignment to local variable "avg".(ÍŠÈöÿÿÿÿÿ8‚¶Èõ²1

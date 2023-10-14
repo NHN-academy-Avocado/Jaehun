@@ -1,0 +1,9 @@
+
+9
+java:S1643"Use a StringBuilder instead.(’ÖÍ¼8Ö¨’ô²1
+>
+java:S1643"Use a StringBuilder instead.(ÉëŞ¡üÿÿÿÿ8Ö¨’ô²1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÔïŒ‡8Ö¨’ô²1
+G	java:S106	"+Replace this use of System.out by a logger.(ÔíÍ•8İ¨’ô²1
+I
+java:S1905"'Remove this unnecessary cast to "char".(ÉëŞ¡üÿÿÿÿ8Ş¨’ô²1

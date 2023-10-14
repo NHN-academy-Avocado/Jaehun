@@ -1,0 +1,11 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ì”³¬üÿÿÿÿ8‚Î¨÷²1
+L	java:S106"+Replace this use of System.out by a logger.(ñ§ÔÊùÿÿÿÿ8†Î¨÷²1
+L	java:S106"+Replace this use of System.out by a logger.(óƒØÿøÿÿÿÿ8‡Î¨÷²1
+L	java:S106"+Replace this use of System.out by a logger.(ÂîŠıÿÿÿÿ8‡Î¨÷²1
+G	java:S106"+Replace this use of System.out by a logger.(¤äçŒ8‡Î¨÷²1
+G	java:S106"+Replace this use of System.out by a logger.(¼“ïè8‡Î¨÷²1
+Y
+java:S1117"7Rename "max" which hides the field declared at line 22.(¬ƒ¹úıÿÿÿÿ8ˆÎ¨÷²1
+T
+java:S1117 "7Rename "min" which hides the field declared at line 31.(ÕæİÎ8ˆÎ¨÷²1

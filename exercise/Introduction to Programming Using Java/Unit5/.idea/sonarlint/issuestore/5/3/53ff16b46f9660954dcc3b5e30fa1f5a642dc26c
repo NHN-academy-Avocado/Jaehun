@@ -1,0 +1,26 @@
+
+n	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡€΅ÿÿÿÿÿ8ο•ησ³1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΏΪλ½ύÿÿÿÿ8π•ησ³1
+O
+java:S1481"-Remove this unused "winCheck" local variable.(γψ¬ωÿÿÿÿ8Α–ησ³1
+L	java:S106"+Replace this use of System.out by a logger.(Ϊ‘Τΐωÿÿÿÿ8Α–ησ³1
+L	java:S106"+Replace this use of System.out by a logger.(“ψΖϋÿÿÿÿ8Α–ησ³1
+L	java:S106"+Replace this use of System.out by a logger.(ΪΚΑ™όÿÿÿÿ8Α–ησ³1
+t
+java:S3776""RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(γµ ύÿÿÿÿ8Α–ησ³1
+G	java:S106/"+Replace this use of System.out by a logger.(²­§Ε8Γ–ησ³1
+L	java:S1063"+Replace this use of System.out by a logger.(•ζ›μϋÿÿÿÿ8Γ–ησ³1
+L	java:S1067"+Replace this use of System.out by a logger.(Ή…Θ°ύÿÿÿÿ8Γ–ησ³1
+L	java:S1069"+Replace this use of System.out by a logger.(ίώΠϋÿÿÿÿ8Γ–ησ³1
+G	java:S106;"+Replace this use of System.out by a logger.(†ώ8Γ–ησ³1
+L	java:S106<"+Replace this use of System.out by a logger.(¤²λύÿÿÿÿ8Γ–ησ³1
+G	java:S106="+Replace this use of System.out by a logger.(ª‹Ύ8Γ–ησ³1
+L	java:S106A"+Replace this use of System.out by a logger.(ξ’ώÿÿÿÿ8Δ–ησ³1
+G	java:S106I"+Replace this use of System.out by a logger.(Ξ‘«ÿ8Δ–ησ³1
+G	java:S106J"+Replace this use of System.out by a logger.(†ώ8Δ–ησ³1
+L	java:S106L"+Replace this use of System.out by a logger.(ηΰχωÿÿÿÿ8Δ–ησ³1
+L	java:S106T"+Replace this use of System.out by a logger.(–ϊφϋύÿÿÿÿ8Δ–ησ³1
+G	java:S106W"+Replace this use of System.out by a logger.(°‘•°8Ε–ησ³1
+L	java:S106\"+Replace this use of System.out by a logger.(γ·ΨΖώÿÿÿÿ8Ζ–ησ³1
+G	java:S106_"+Replace this use of System.out by a logger.(Χ‰ΚΑ8Ζ–ησ³1

@@ -21,3 +21,7 @@ V
 &src/main/java/com/nhnacademy/Main.java,8/2/82f8567f8051dbdfe2908b84f6e3e695c2bda0d9
 ^
 .src/main/java/com/nhnacademy/tribe/Terran.java,9/6/967b600ba6b93cefe2a21f36bfcc5870b7bd5459
+`
+0src/main/java/com/nhnacademy/zerg/Ultralisk.java,0/3/03dc3dd46b66d0838d63f6c0b1f00a720e7beea1
+_
+/src/main/java/com/nhnacademy/zerg/Zergling.java,f/5/f54177dc6174e0340693c068fd6e1347a1f71fda

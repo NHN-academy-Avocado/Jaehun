@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class BOJ11650{
+public class S5_BOJ11650 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int[][] arr = new int[Integer.parseInt(bf.readLine())][2];

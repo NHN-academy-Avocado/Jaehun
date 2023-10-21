@@ -1,0 +1,25 @@
+
+o
+java:S1192¤"QDefine a constant instead of duplicating this literal "' found in data." 3 times.(™ğÅú8‰¶‚µ1
+n	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ±›ø8‰¶‚µ1
+:
+java:S1643ª"Use a StringBuilder instead.(ÑªÏè8‰¶‚µ1
+:
+java:S1643Ã"Use a StringBuilder instead.(ÑªÏè8‰¶‚µ1
+:
+java:S1643Ê"Use a StringBuilder instead.(ÑªÏè8‰¶‚µ1
+:
+java:S1643Ú"Use a StringBuilder instead.(ÑªÏè8‰¶‚µ1
+_
+java:S1659Z"BDeclare "MINUS" and all following declarations on a separate line.(±İ¯ˆ8ş¶‚µ1
+e
+java:S1659¥"GDeclare "constantCt" and all following declarations on a separate line.(³±„É8ƒ¶‚µ1
+o
+java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(ÍÑ´8¶‚µ1
+>	java:S131q""Add a default case to this switch.(÷é²à8£¶‚µ1
+?	java:S131‚""Add a default case to this switch.(÷é²à8«¶‚µ1
+p
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÃñ¹8È¶‚µ1
+a
+java:S2130à">Use "Double.parseDouble" for this string-to-double conversion.(æÚûÿÿÿÿ8Ë¶‚µ1
+K	java:S108â")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8Ë¶‚µ1

@@ -1,0 +1,21 @@
+
+z	java:S135D"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8¬®œ´1
+
+java:S1319+"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(×ëš×8¬®œ´1
+9
+java:S1643E"Use a StringBuilder instead.(¯ïˆƒ8Å‹³œ´1
+9
+java:S1643K"Use a StringBuilder instead.(ÊÏÂ8Å‹³œ´1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡ğƒ8­®œ´1
+D
+java:S1125"'Remove the unnecessary boolean literal.(ûË°¯8Æ®œ´1
+G	java:S106"+Replace this use of System.out by a logger.(Ñ‚ìº8Æ®œ´1
+G	java:S106"+Replace this use of System.out by a logger.(ĞõÄÒ8È®œ´1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8È®œ´1
+[
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(‹Ç‰8È®œ´1
+F	java:S106"+Replace this use of System.out by a logger.(ÒÕ•p8É®œ´1
+G	java:S106"+Replace this use of System.out by a logger.(¦œ¢8É®œ´1
+G	java:S106#"+Replace this use of System.out by a logger.(‡Ö¿Ó8É®œ´1
+L	java:S106%"+Replace this use of System.out by a logger.(ıÿŞüÿÿÿÿ8É®œ´1
+G	java:S106&"+Replace this use of System.out by a logger.(˜²Ä8É®œ´1

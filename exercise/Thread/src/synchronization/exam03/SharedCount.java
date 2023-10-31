@@ -15,5 +15,4 @@ public class SharedCount {
     public static synchronized void increment() {
         count++;
     }
-
 }

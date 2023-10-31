@@ -1,6 +1,6 @@
 package thread_class_extension;
 
-public class Quiz2_4 {
+public class Quiz04 {
     public static void main(String[] args) {
         ThreadCounter threadCounter1 = new ThreadCounter("test1", 4);
         ThreadCounter threadCounter2 = new ThreadCounter("test2", 4);

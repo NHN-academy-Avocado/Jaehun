@@ -1,6 +1,6 @@
 package thread_class_extension;
 
-public class Quiz2_3 {
+public class Quiz03 {
     public static void main(String[] args) {
         Counter counter1 = new Counter("test1", 5);
         Counter counter2 = new Counter("test2", 5);

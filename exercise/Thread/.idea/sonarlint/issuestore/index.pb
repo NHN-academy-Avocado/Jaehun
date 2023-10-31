@@ -31,9 +31,3 @@ T
 $src/stop/ThreadUnlimitedCounter.java,d/1/d136574fdf3b80158ba36dab8ef25a322572f1d6
 D
 src/stop/Exam02.java,1/4/14e11c2ab4b4e200ee4d696242370af6e94e4259
-V
-&src/synchronization/SharedCounter.java,2/3/23460498ffe07f8715c573dee50f496e53968788
-T
-$src/synchronization/SharedCount.java,9/1/916ef19fd0d342986385103af3470e5073d2adfd
-O
-src/synchronization/Exam01.java,a/b/ab4e39de597ee06be987b8d4ab7f349adc70d16d

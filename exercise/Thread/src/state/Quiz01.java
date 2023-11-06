@@ -17,18 +17,16 @@ public class Quiz01 {
             time = Long.parseLong(line);
         }
 
-        Runnable ticker = () -> {
-            while(!Thread.currentThread().isInterrupted()) {
+        Thread thread = new Thread(() -> {
+            while (!Thread.currentThread().isInterrupted()) {
                 System.out.println("tick");
                 try {
                     Thread.sleep(time);
-                } catch (InterruptedException var3) {
-                    System.out.println(var3.getMessage());
+                } catch (InterruptedException e) {
+                    System.out.println(e.getMessage());
                 }
             }
-
-        };
-        Thread thread = new Thread(ticker);
+        });
         thread.start();
         br.close();
     }

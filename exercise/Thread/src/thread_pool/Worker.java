@@ -1,7 +1,7 @@
 package thread_pool;
 
 public class Worker implements Runnable {
-    String name;
+    private String name;
 
     public Worker(String name) {
         this.name = name;

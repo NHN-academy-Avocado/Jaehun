@@ -45,3 +45,11 @@ F
 src/exam/Consumer.java,a/f/afda7073b6fecc79f9ee730fb52fd62a4b436e5d
 F
 src/exam/Producer.java,1/a/1a4aef0a5341ea5bbf50e1e4db635ac9c98d2246
+G
+src/homework/Store.java,0/9/0991378cbad2a3a76c54746a8054e07336934bc3
+J
+src/homework/Producer.java,1/c/1cd9e0c3bba556cbea1a385bb53f14f94d0f0ccf
+F
+src/homework/Main.java,2/8/2848ef8359f6c78c742d36d2711b63c59f542257
+J
+src/homework/Consumer.java,e/3/e3d6a8d867b305dcd5e37ff4c93066c1a9a3395e

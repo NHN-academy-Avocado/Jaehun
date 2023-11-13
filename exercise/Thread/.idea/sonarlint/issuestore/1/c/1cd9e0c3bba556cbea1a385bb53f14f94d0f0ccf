@@ -1,0 +1,10 @@
+
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8‘Ş³¼1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8Á‚·³¼1
+D
+java:S1905"'Remove this unnecessary cast to "long".(Ëœñ›8Â‚·³¼1
+@
+java:S2119"Save and re-use this "Random".(Å¨ï’üÿÿÿÿ8­Ë¾³¼1
+L	java:S106"+Replace this use of System.out by a logger.(¥­„úÿÿÿÿ8Â‚·³¼1

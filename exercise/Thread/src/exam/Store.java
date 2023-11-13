@@ -22,7 +22,6 @@ public class Store {
                 Thread.currentThread().interrupt();
             }
         }
-
         consumer++;
     }
 
@@ -31,7 +30,7 @@ public class Store {
         notifyAll();
     }
 
-    public synchronized void buy() {
+    public synchronized void buy() throws InterruptedException {
         while(this.item == 0) {
             try {
                 wait();
@@ -39,7 +38,6 @@ public class Store {
                 Thread.currentThread().interrupt();
             }
         }
-
         item--;
         notifyAll();
     }
@@ -53,7 +51,7 @@ public class Store {
             }
         }
 
-        item++;
+        item=MAX_ITEM;
         notifyAll();
     }
 }

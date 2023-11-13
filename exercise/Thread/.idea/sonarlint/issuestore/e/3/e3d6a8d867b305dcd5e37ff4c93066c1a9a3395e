@@ -1,0 +1,12 @@
+
+}
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "foodName".(ÇÞƒá8Ü™Óµ¼1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8á™Óµ¼1
+:
+java:S2119"Save and re-use this "Random".(¼ÝÅf8ã™Óµ¼1
+D
+java:S1905"'Remove this unnecessary cast to "long".(Ëœñ›8ä™Óµ¼1
+L	java:S106 "+Replace this use of System.out by a logger.(Üì¬ßüÿÿÿÿ8ä™Óµ¼1
+L	java:S106#"+Replace this use of System.out by a logger.(Ïèê¥ùÿÿÿÿ8ä™Óµ¼1
+L	java:S106%"+Replace this use of System.out by a logger.(…¤‚Ùþÿÿÿÿ8å™Óµ¼1

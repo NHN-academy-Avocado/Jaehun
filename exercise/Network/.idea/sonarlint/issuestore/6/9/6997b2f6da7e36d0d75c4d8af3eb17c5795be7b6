@@ -1,0 +1,7 @@
+
+f
+java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(Ø»œóûÿÿÿÿ8¶¬ºá¼1
+G	java:S106	"+Replace this use of System.err by a logger.(’™¥à8¹¬ºá¼1
+F	java:S106"+Replace this use of System.err by a logger.(×ì—8¼¬ºá¼1
+G	java:S106"+Replace this use of System.out by a logger.(¥şä8¿¬ºá¼1
+E	java:S108")Either remove or fill this block of code.(ìŠÈ8¿¬ºá¼1

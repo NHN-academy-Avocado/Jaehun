@@ -1,0 +1,11 @@
+
+G	java:S106"+Replace this use of System.err by a logger.(’Í¯Î8õõÊÜ¼1
+L	java:S106"+Replace this use of System.out by a logger.(â‚Ÿùÿÿÿÿ8öõÊÜ¼1
+L	java:S106"+Replace this use of System.err by a logger.(‘ä‰¼ûÿÿÿÿ8öõÊÜ¼1
+L	java:S106"+Replace this use of System.err by a logger.(Şàš¬øÿÿÿÿ8öõÊÜ¼1
+Y
+java:S1128"<Remove this unused import 'java.awt.image.DataBufferDouble'.(–ñ²‹8‚¬ÓÜ¼1
+P
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8£‘×Ü¼1
+S
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8£‘×Ü¼1

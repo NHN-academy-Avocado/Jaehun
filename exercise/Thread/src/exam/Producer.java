@@ -12,9 +12,10 @@ public class Producer implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep((long) (ThreadLocalRandom.current().nextInt(1, 10) * 1000));
                 store.sell();
-                System.out.println("물건이 추가되었습니다");
+                int sleepTime = ThreadLocalRandom.current().nextInt(1, 10) * 4000;
+                System.out.println("물건을 납품하고, 다음 납품까지 " + sleepTime/1000 + "초 대기합니다");
+                Thread.sleep(sleepTime);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

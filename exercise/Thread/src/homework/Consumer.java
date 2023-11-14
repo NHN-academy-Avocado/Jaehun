@@ -1,39 +1,37 @@
 
 package homework;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Consumer implements Runnable {
     private Store store;
-    private String itemName;
+    private String name;
 
+    public String getName() {
+        return this.name;
+    }
 
-    public Consumer(Store store) {
+    public Consumer(String name, Store store) {
+        this.name = name;
         this.store = store;
     }
 
     public void run() {
         while (true) {
             try {
-                Thread.sleep((long) (ThreadLocalRandom.current().nextInt(1, 10) * 1000));
+                int sleepTime = ThreadLocalRandom.current().nextInt(1, 10) * 1000;
+
                 this.store.enter();
-//                System.out.println(this.name + "이 매장에 들어갑니다.");
+                Thread.sleep(sleepTime);
 
-                setRandomWantItem();
-                this.store.buy(itemName);
-//                System.out.println(this.name + "이 " + itemName  + "을 구입합니다.");
-
+                this.store.buy();
+//                System.out.println(this.name + "이 물건을 구입합니다.");
                 this.store.exit();
-//                System.out.println(this.name + "이 매장에 퇴장합니다.");
-                Thread.sleep((long) (ThreadLocalRandom.current().nextInt(1, 10) * 1000));
+                System.out.println(this.name + "이 매장에 퇴장합니다. 다음 구매까지 " + sleepTime/1000 + "초 대기합니다.");
+                Thread.sleep(sleepTime);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
         }
-    }
-
-    public void setRandomWantItem() {
-        itemName = store.foodList[ThreadLocalRandom.current().nextInt(0, store.getItemNumber())];
     }
 }

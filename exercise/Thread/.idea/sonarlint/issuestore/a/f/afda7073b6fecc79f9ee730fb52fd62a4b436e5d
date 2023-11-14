@@ -1,8 +1,6 @@
 
 D
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8³Ö²¼1
-D
-java:S1905"'Remove this unnecessary cast to "long".(Ëœñ›8´Ö²¼1
-L	java:S106"+Replace this use of System.out by a logger.(Üì¬ßüÿÿÿÿ8µÖ²¼1
-G	java:S106"+Replace this use of System.out by a logger.(åïòË8µÖ²¼1
-L	java:S106"+Replace this use of System.out by a logger.(…¤‚Ùşÿÿÿÿ8µÖ²¼1
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8Ó‡˜Ê¼1
+G	java:S106"+Replace this use of System.out by a logger.(åïòË8µÖ²¼1
+L	java:S106"+Replace this use of System.out by a logger.(…¤‚Ùşÿÿÿÿ8µÖ²¼1
+G	java:S106"+Replace this use of System.out by a logger.(¹ÈË£8ü½’Ê¼1

@@ -1,3 +1,7 @@
 
-E
-java:S1068	"(Remove this unused "item" private field.(Î²ÜÌ8Í¯Í³¼1
+L	java:S106"+Replace this use of System.out by a logger.(ƒŠï´ÿÿÿÿÿ8¥«¢Ë¼1
+L	java:S106$"+Replace this use of System.out by a logger.(‚¶›Ïþÿÿÿÿ8¥«¢Ë¼1
+G	java:S1062"+Replace this use of System.out by a logger.(ØÜ¨ý8§«¢Ë¼1
+L	java:S106="+Replace this use of System.out by a logger.(í¿‰—ÿÿÿÿÿ8¬¡¦Ë¼1
+N
+java:S1068",Remove this unused "MAX_ITEM" private field.(¶ó‘Ãÿÿÿÿÿ8¨«¢Ë¼1

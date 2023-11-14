@@ -23,10 +23,14 @@ public class Store {
             }
         }
         consumer++;
+        System.out.println("고객 입장. 현재 매장 내 고객 수: " + consumer);
+        notifyAll();
     }
 
     public synchronized void exit() {
         consumer--;
+        System.out.println("고객 퇴장. 현재 매장 내 고객 수: " + consumer);
+
         notifyAll();
     }
 
@@ -39,6 +43,7 @@ public class Store {
             }
         }
         item--;
+        System.out.println("물건 구매. 남은 물건 수: " + item);
         notifyAll();
     }
 
@@ -50,8 +55,8 @@ public class Store {
                 Thread.currentThread().interrupt();
             }
         }
-
         item=MAX_ITEM;
+        System.out.println("물건 입고. 매장 내 물건 수 : " + item);
         notifyAll();
     }
 }

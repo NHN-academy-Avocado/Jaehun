@@ -2,71 +2,63 @@ package homework;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Semaphore;
-import javax.swing.plaf.SeparatorUI;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Store {
     private static final int MAX_ITEM = 10;
     private static final int MAX_CONSUMER = 5;
-    private int consumer;
-    private Semaphore storeSemaphore;
+    private Semaphore consumerSemaphore;
+    private Map<String, Integer> itemList;
+    private Map<String, Semaphore> itemSemaphore;
+    private int itemCount=0;
 
 
-    ArrayList<String> item = new ArrayList<>();
-    private Map<String, Integer> inventory;
-    private Map<String, Semaphore> semaphores;
-
-    String[] foodList = {"사과", "바나나", "딸기"};
-
-    public Store() {
-        this.storeSemaphore = new Semaphore(MAX_CONSUMER);
-        this.inventory = new HashMap<>();
-        this.semaphores = new HashMap<>();
-        for(String item: foodList){
-            inventory.put(item, 0);
-            semaphores.put(item, new Semaphore(MAX_ITEM));
+    public Store(String[] items) {
+        consumerSemaphore = new Semaphore(MAX_CONSUMER);
+        itemList = new HashMap<>();
+        itemSemaphore = new HashMap<>();
+        for (String item : items) {
+            itemList.put(item, 0);
+            itemSemaphore.put(item, new Semaphore(1));
         }
     }
 
-    public void enter() throws InterruptedException {
-        storeSemaphore.acquire();
-        System.out.println(Thread.currentThread().getName() + "  입장합니다");
+    public  void enter() throws InterruptedException {
+        consumerSemaphore.acquire();
+        System.out.println("고객 입장. 현재 매장 내 고객 수: " + (MAX_CONSUMER - consumerSemaphore.availablePermits()));
+    }
+
+    public  void exit() {
+        consumerSemaphore.release();
+        System.out.println("고객 퇴장. 현재 매장 내 고객 수: " + (MAX_CONSUMER - consumerSemaphore.availablePermits()));
 
     }
 
-    public void exit() {
-        storeSemaphore.release();
-        System.out.println(Thread.currentThread().getName() + "  퇴장합니다");
-
-    }
-
-    public void buy(String name) throws InterruptedException {
-        Semaphore semaphore = semaphores.get(name);
-        semaphore.acquire(); // 해당 물품에 대한 세마포어 획득
-
-        synchronized (this) {
-            while (inventory.get(name) == 0) {
-                wait(); // 해당 물품이 없으면 대기
-            }
-            inventory.put(name, inventory.get(name) - 1); // 물품 구매
-            System.out.println(name + " 구매. 남은 수량: " + inventory.get(name));
+    public synchronized void buy() throws InterruptedException {
+        List<String> keysAsArray = new ArrayList<>(itemList.keySet());
+        String randomKey = keysAsArray.get(ThreadLocalRandom.current().nextInt(keysAsArray.size()));
+        while(itemList.get(randomKey)==0){
+            randomKey = keysAsArray.get(ThreadLocalRandom.current().nextInt(keysAsArray.size()));
         }
-        semaphore.release(); // 세마포어 반환
+        Semaphore semaphore = itemSemaphore.get(randomKey);
+        semaphore.acquire();
+        itemList.put(randomKey, itemList.get(randomKey) - 1);
+        itemCount--;
+        System.out.println(randomKey + "구매. 남은 수량: " + itemList.get(randomKey));
+        semaphore.release();
     }
 
-    public synchronized void sell(String name) throws InterruptedException {
-        while (inventory.get(name) == MAX_ITEM) {
-            wait(); // 해당 물품이 가득 차면 대기
+    public synchronized void sell() {
+        while(itemCount!=10){
+            List<String> keysAsArray = new ArrayList<>(itemList.keySet());
+            String randomKey = keysAsArray.get(ThreadLocalRandom.current().nextInt(keysAsArray.size()));
+            itemList.put(randomKey, itemList.get(randomKey) + 1);
+            itemCount++;
+            notifyAll();
+            System.out.println(randomKey + "추가 완료");
         }
-        inventory.put(name, inventory.get(name) + 1); // 물품 입고
-        System.out.println(name + " 입고. 현재 수량: " + inventory.get(name));
-        notifyAll(); // 소비자에게 알림
-    }
-
-
-    public int getItemNumber() {
-        return foodList.length;
     }
 }

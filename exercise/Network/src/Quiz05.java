@@ -25,8 +25,8 @@ public class Quiz05 {
             int ch;
             byte[] buffer = new byte[1024];
             BufferedInputStream input = new BufferedInputStream(socket.getInputStream());
-//            BufferedOutputStream output = new BufferedOutputStream(System.out);
-            BufferedOutputStream output = new BufferedOutputStream(socket.getOutputStream());
+            BufferedOutputStream output = new BufferedOutputStream(System.out);
+//            BufferedOutputStream output = new BufferedOutputStream(socket.getOutputStream());
             while ((ch = input.read(buffer))>= 0) {
                 if(new String(buffer,0,ch).trim().equals("exit")){
                     break;

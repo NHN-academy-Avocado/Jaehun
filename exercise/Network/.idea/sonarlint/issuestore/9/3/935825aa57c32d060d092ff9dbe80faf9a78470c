@@ -1,0 +1,11 @@
+
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+@	java:S106"+Replace this use of System.err by a logger.(ö—¬ì
+E	java:S106"+Replace this use of System.out by a logger.(í›ïúÿÿÿÿÿ
+@	java:S106"+Replace this use of System.err by a logger.(®ÚÂÀ
+P
+java:S1161*":Add the "@Override" annotation above this method signature(“–ýþ
+@	java:S1061"+Replace this use of System.out by a logger.(±¼ýÁ
+E	java:S1068"+Replace this use of System.err by a logger.(ÑïÇ©üÿÿÿÿ
+@	java:S106I"+Replace this use of System.err by a logger.(ëÁ‹ã

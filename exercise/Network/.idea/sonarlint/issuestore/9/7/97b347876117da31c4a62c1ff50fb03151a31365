@@ -1,0 +1,6 @@
+
+G	java:S106"+Replace this use of System.err by a logger.(ö—¬ì8µ˜ÇÝ¾1
+L	java:S106"+Replace this use of System.out by a logger.(ÐˆŽûýÿÿÿÿ8¶˜ÇÝ¾1
+G	java:S106$"+Replace this use of System.out by a logger.(žô¬ñ8£°ÇÝ¾1
+P
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8·˜ÇÝ¾1

@@ -1,6 +1,0 @@
-
-G	java:S106
-"+Replace this use of System.err by a logger.(’™¥à8µÚ¨Ü¼1
-F	java:S106"+Replace this use of System.err by a logger.(×ì—8¶Ú¨Ü¼1
-G	java:S106"+Replace this use of System.out by a logger.(¥şä8·Ú¨Ü¼1
-J	java:S108")Either remove or fill this block of code.(¿ßÔ–ıÿÿÿÿ8·Ú¨Ü¼1

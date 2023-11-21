@@ -1,4 +1,4 @@
-package Quiz11;
+package Quiz12;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
